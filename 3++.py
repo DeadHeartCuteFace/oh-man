@@ -14,6 +14,12 @@ class Contact:
 #     umber (str): 联系人标签
 #     group (str): 联系人分组
 
+# 通讯录中存储联系人的类
+#  Attributes:
+#     name (str): 联系人姓名
+#     umber (str): 联系人标签
+#     group (str): 联系人分组
+
 
 class AddressBook:
     from re import T
@@ -47,7 +53,9 @@ class AddressBook:
     #     None
     def display_all_contacts(self):
         for contact in self.contacts:
-            print(f"名称: {contact.name}, 标签: {contact.number}, 分组: {contact.group}")
+            print(
+                f"名称: {contact.name}, 标签: {contact.number}, 分组: {contact.group}"
+            )
         print("\n")
 
 
@@ -167,7 +175,9 @@ while True:
 
     def display_all_contacts(self):
         for contact in self.contacts:
-            print(f"名称: {contact.name}, 标签: {contact.number}, 分组: {contact.group}")
+            print(
+                f"名称: {contact.name}, 标签: {contact.number}, 分组: {contact.group}"
+            )
         print("\n")
 
 
